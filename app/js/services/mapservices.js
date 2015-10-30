@@ -12,10 +12,11 @@ define([
 
 			var layers = [];
 			var censusLayer = new FeatureLayer(CENSUS_URL, {
-				id: 'Census'
+				id: 'Census',
+				outFields: ['*']
 			});
 			var	requestLayer = new FeatureLayer(REQUEST_URL, {
-				id: 'Requests',
+				id: 'testTrees',
 				mode: FeatureLayer.MODE_ONDEMAND,
 				outFields: ['*']
 			});
